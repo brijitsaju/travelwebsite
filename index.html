@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure</title>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css style -->
+  <link rel="stylesheet" href="./travelweb.css">
+  <!-- icon image  -->
+  <link rel="icon" type="image/x-icon"
+    href="https://cdn1.vectorstock.com/i/1000x1000/95/25/outdoor-adventure-logo-vector-23929525.jpg">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</head>
+<header>
+  <nav style="background-color: rgb(227, 225, 225)" ; class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">Adventure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span><i class="fa-solid fa-bars" style="color: black;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input style="border: black solid 2px;" class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<body>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?cs=srgb&dl=clouds-cold-dawn-2104152.jpg&fm=jpg"
+          alt="" class="d-block" style="width:100%" height="740h">
+        <div class="carousel-caption">
+          <h4>DISCOVER THE COLOURFUL WORLD</h4>
+          <h1> BEST TRIP</h1>
+          <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+            from us. </p>
+          <a class="discover" href="#packages">Discover
+            Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" col-xs-1>
+        <img
+          src="http://getwallpapers.com/wallpaper/full/2/1/b/1503586-free-desktop-wallpaper-travel-1920x1080-for-xiaomi.jpg"
+          alt="Chicago" class="d-block" style="width:100% " height="740h" style="opacity:.1;">
+        <div class="carousel-caption col-xs-1">
+          <h4>DISCOVER THE COLOURFUL WORLD</h4>
+          <h1>NEW TRIP</h1>
+
+          <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+            from us.!</p>
+          <a class="discover" href="#packages">Discover
+            Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://lh5.googleusercontent.com/proxy/c8BsluMxbQCaqku_sxoeMoMC3BjrawYwRvJ8oe63qItg5j-OcjVOU6v1YI3YuUqJXbmJs2KoaoCGTQNw29OzQLiEY_TRb5fvK1LrrA=s0-d"
+          alt="New York" class="d-block" style="width:100%" height="740h">
+        <div class="carousel-caption col-xs-1">
+          <h4>DISCOVER THE COLOURFUL WORLD</h4>
+          <h1>NEW EXPERIENCE</h1>
+          <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+            from us.</p>
+          <a class="discover" href="#packages">Discover
+            Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- about -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="main-txt">
+        <h1>About</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="row-12">
+            <div class="card">
+              <video autoplay muted loop src="./video (1080p).mp4" height="100%"></video>
+
+            </div>
+          </div><br>
+          <div class="row-12">
+            <div class="card">
+              <video autoplay muted loop src="./video (2160p).mp4" height="100%"></video>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <h2>Why Choose Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur aliquam maiores aut totam quos
+            corrupti ab, nemo quaerat esse, repudiandae reprehenderit ea repellendus ipsa alias aperiam modi tenetur
+            quisquam.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ullam, quasi culpa omnis distinctio sit
+            aperiam </p><br>
+
+          <p class="mb-0"><i class="fa fa-arrow-right" aria-hidden="true"></i> Frist Class</p><br>
+          <p class="mb-0"><i class="fa fa-arrow-right" aria-hidden="true"></i> Hand picked</p><br>
+          <p class="mb-0"><i class="fa fa-arrow-right" aria-hidden="true"></i> Second Class</p><br>
+          <p class="mb-0"><i class="fa fa-arrow-right" aria-hidden="true"></i> Frist Class</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ullam, quasi culpa omnis distinctio sit
+            aperiam asperiores aliquid voluptas dolorem vitae eveniet nostrum ad aliquam ut eum corrupti minus quod.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis earum, eum quaerat, eos ipsum sequi
+          </p>
+          <button id="about-btn">Read More...</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- book now -->
+  <section class="book" id="book">
+    <div class="container">
+      <div class="maintext">
+        <h1>Book Now</h1>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6 col-xs-1">
+          <div class="booking-box">
+
+            <div class="booking-form">
+              <label>Flying from</label>
+              <input type="text" class="form-control" placeholder="city or airport"><br>
+              <label>Flying to</label>
+              <input type="text" class="form-control" placeholder="city or airport"><br>
+              <div class="input-grp">
+                <label>Departing</label>
+                <input type="date" class="form-control select-date">
+              </div>
+              <div class="input-grp">
+                <label>Returning</label>
+                <input type="date" class="form-control select-date">
+              </div>
+              <div class="input-grp">
+                <label>Adults</label>
+                <input type="number" class="form-control " value="0">
+              </div>
+
+              <div class="input-grp">
+                <label>Children</label>
+                <input type="number" class="form-control " value="0">
+              </div>
+              <div class="input-grp">
+                <label>Travel class</label>
+                <select class="custom-select">
+                  <option value="1">Economy Class</option>
+                  <option value="1">Business Class</option>
+
+                </select>
+                <input type="number" class="form-control " value="0">
+              </div>
+              <div class="input-grp">
+                <button type="button " class="btn-btn-primary flight">BOOK</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-1  "> <!-- md-medium devices >=768px -->
+          <div class="card" style="border-radius: 20px; height: 550px;">
+            <h2>Online Booking</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur aliquam maiores aut totam quos
+              corrupti ab, nemo quaerat esse, repudiandae reprehenderit ea repellendus ipsa alias aperiam modi tenetur
+              quisquam.</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ullam, quasi culpa omnis distinctio sit
+              aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam dolorum tempora veniam
+              id velit, ut recusandae, odit inventore beatae perferendis dolores fugit veritatis sequi quis illum non
+              vel blanditiis!</p><br>
+
+            <button id="about-btn">Read More...</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- section packages -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="main-txt">
+        <h1>Packages</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="card">
+            <img
+              src="http://leisuregrouptravel.com/wp-content/uploads/2015/03/Manchester-Town-Hall-and-Albert-Square.jpg"
+              alt="">
+            <div class="cardbody">
+              <h3>United Kingdom</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime eius fugit quidem corporis
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6><br>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="https://journeyofanomadicfamily.com/wp-content/uploads/03-13954-post/Mulhouse.jpg" alt="">
+            <div class="cardbody">
+              <h3>France</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime eius fugit quidem corporis
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$400</strong></h6><br>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/0c/2d/69/0c2d69182fd567ea2169d90e72f8a0a2.jpg" alt="">
+            <div class="cardbody">
+              <h3>Pakisthan</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime eius fugit quidem corporis
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$600</strong></h6><br>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div><br>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="https://www.edreams.fr/blog/wp-content/uploads/sites/6/2017/03/shutterstock_228809320.jpg" alt="">
+            <div class="cardbody">
+              <h3>Italy</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime eius fugit quidem corporis
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6><br>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="card">
+            <img
+              src="https://www.greavesindia.co.uk/wp-content/uploads/2017/06/26.KhajurahoTemples_credit-RNMitraiStock-httpwww.istockphoto.comgbphotokandariya-mahadeva-temple-khajuraho-india-unesco-world-heritage-site-gm540115304-96377381-1024x683.jpg"
+              alt="">
+            <div class="cardbody">
+              <h3>India</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime eius fugit quidem corpori.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6><br>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="http://worldalldetails.com/sightseeing/paris_architecture_france_835467.jpg" alt="">
+            <div class="cardbody">
+              <h3>United States</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime eius fugit quidem corporis
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6><br>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- serives -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="main-txt">
+        <h1>Some Features that Made us Unique</h1>
+      </div>
+      <div class="row" margin-top: 30px;>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card-body">
+              <h3>Expert Techinicans</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-phone"></i>
+            <div class="card-body">
+              <h3>Supportive</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-rocket"></i>
+            <div class="card-body">
+              <h3>Technical Skill</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px ;">
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card-body">
+              <h3>Hotel Reservation</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card-body">
+              <h3>Food and Drinks</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-bullhorn"></i>
+            <div class="card-body">
+              <h3>Event Management</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px ;">
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-globe-asia"></i>
+            <div class="card-body">
+              <h3>WorldWide Toures</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-plane"></i>
+            <div class="card-body">
+              <h3>Travel Guide</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-hiking"></i>
+            <div class="card-body">
+              <h3>Explore</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dignissimos pariatur expedita </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+
+  <!-- gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="main-txt">
+        <h1>Gallery</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?cs=srgb&dl=boat-exotic-freedom-1371360.jpg&fm=jpg"
+              alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://iso.500px.com/wp-content/uploads/2015/08/travel_cover-1500x1000.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://cdn.wallpapersafari.com/78/25/JU9bGD.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://wallpaperaccess.com/full/185412.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?cs=srgb&dl=flight-dawn-sky-723240.jpg&fm=jpg"
+              height="180px" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="http://i.huffpost.com/gen/1250981/images/o-RELAX-TRAVEL-facebook.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://rochkirstin.com/wp-content/uploads/2019/07/traveling-in-automobile.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?cs=srgb&dl=coconut-trees-couple-daylight-2174656.jpg&fm=jpg"
+              alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://images.hdqwalls.com/wallpapers/travel-hd.jpg" height="170px" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://wallpapercave.com/wp/wp5240505.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-1">
+          <div class="card">
+            <img src="https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer id="footer">
+    <h1>Adventure</h1>
+
+    <br><br>
+    <div id="heading">
+      <div class="row">
+      <div class="col-md-3">
+          <h2>Contact</h2><br>
+          <p>
+            No. 120 E 4th Ave, USA<br>
+            reservation@adventure.com<br>
+            +1234 567 789</p>
+        </div>
+        <div class=" col-md-3">
+          <h2>Feedback</h2><br>
+          <form action="">
+            <input type="text" class="form-control" height="50px" placeholder="Type your feedback" required>
+            <input type="submit" value="Send message" class="send" required>
+
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h2>Follow Us</h2><br>
+          <h5>Lets us be social...</h5>
+          <div class="social-link">
+            <i class="fa-brands fa-facebook" style="color: #dbdbdb" ;></i>
+            <i class="fa-brands fa-instagram" style="color: #f9fafa;"></i>
+            <i class="fa-brands fa-youtube" style="color: #f2f2f2;"></i>
+            <i class="fa-brands fa-twitter" style="color: #edeff2;"></i>
+          </div>
+
+        </div>
+</div>
+      </div><br>
+
+      <!-- copyright -->
+      <div class="copyright">
+        <p>&copy;Copyright Adeventure . All Rights reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
